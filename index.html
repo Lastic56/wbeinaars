@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Webinars - Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="stylesheet" href="css/style.css">
+<style>
+html, body { margin: 0; padding: 0; }
+
+/* ===== Partner with Us (preview section) ===== */
+#webinar-partnerships {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    box-sizing: border-box;
+    background: var(--token-bg-soft);
+    border: 1px solid var(--token-border);
+    border-radius: 16px;
+    padding: 60px 3%;
+}
+#webinar-partnerships .wps-inner { width: 100%; }
+#webinar-partnerships .wps-head { max-width: 780px; margin-bottom: 36px; }
+#webinar-partnerships .wps-kicker {
+    display: inline-block;
+    font-size: var(--fs-meta);
+    font-weight: var(--fw-meta);
+    letter-spacing: 0.14em;
+    text-transform: none;
+    color: var(--token-primary);
+    margin-bottom: 12px;
+}
+#webinar-partnerships .wps-title {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: var(--fs-primary);
+    font-weight: var(--fw-primary);
+    color: var(--token-text);
+    line-height: 1.1;
+    margin: 0 0 16px;
+}
+#webinar-partnerships .wps-lead {
+    font-size: var(--fs-lead);
+    color: var(--token-text);
+    line-height: 1.6;
+    margin: 0 0 12px;
+}
+#webinar-partnerships .wps-body {
+    font-size: var(--fs-body);
+    color: var(--token-text-muted);
+    line-height: 1.7;
+    margin: 0;
+}
+#webinar-partnerships .wps-tiers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin: 0 0 36px;
+}
+#webinar-partnerships .wps-tier {
+    background: #fff;
+    border: 1px solid var(--token-border);
+    border-radius: 16px;
+    padding: 30px 26px;
+    display: flex;
+    flex-direction: column;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+#webinar-partnerships .wps-tier:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .07);
+}
+#webinar-partnerships .wps-tier h3 {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: var(--fs-section);
+    font-weight: var(--fw-section);
+    color: var(--token-text);
+    margin: 0 0 6px;
+}
+#webinar-partnerships .wps-price {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: clamp(24px, 2.4vw, 32px);
+    font-weight: 800;
+    color: var(--token-primary);
+    line-height: 1.1;
+    margin: 0 0 14px;
+}
+#webinar-partnerships .wps-tier p {
+    font-size: var(--fs-body);
+    color: var(--token-text-muted);
+    line-height: 1.6;
+    margin: 0;
+}
+#webinar-partnerships .wps-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+}
+#webinar-partnerships .wps-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: var(--fs-btn);
+    text-decoration: none;
+    line-height: 1;
+    transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+}
+#webinar-partnerships .wps-btn--primary {
+    background: var(--token-primary);
+    color: #111;
+}
+#webinar-partnerships .wps-btn--primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(245, 166, 50, .32);
+}
+#webinar-partnerships .wps-btn--ghost {
+    background: transparent;
+    border-color: var(--token-primary);
+    color: var(--token-primary);
+}
+#webinar-partnerships .wps-btn--ghost:hover {
+    background: rgba(245, 166, 50, .12);
+}
+#webinar-partnerships .wps-note {
+    font-size: var(--fs-meta);
+    color: var(--token-text-muted);
+    margin: 18px 0 0;
+}
+@media (max-width: 900px) {
+    #webinar-partnerships .wps-tiers { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+    #webinar-partnerships .wps-btn { width: 100%; justify-content: center; }
+}
+
+/* ===== Variant containers (preview-only comparison) ===== */
+.wps-variants { padding-top: 10px; }
+.wpsv-label {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 34px 3% 16px;
+    font-size: var(--fs-meta);
+    font-weight: var(--fw-meta);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--token-text-muted);
+}
+.wpsv-label::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--token-border);
+}
+.wpsv-section {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    box-sizing: border-box;
+    padding: 60px 3%;
+    border-radius: 16px;
+    border: 1px solid var(--token-border);
+    background: var(--token-bg-soft);
+}
+.wpsv-inner { width: 100%; }
+.wpsv-kicker {
+    display: inline-block;
+    font-size: var(--fs-meta);
+    font-weight: var(--fw-meta);
+    letter-spacing: 0.14em;
+    text-transform: none;
+    color: var(--token-primary);
+    margin-bottom: 12px;
+}
+.wpsv-title {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: var(--fs-primary);
+    font-weight: var(--fw-primary);
+    color: var(--token-text);
+    line-height: 1.1;
+    margin: 0 0 16px;
+}
+.wpsv-lead {
+    font-size: var(--fs-lead);
+    color: var(--token-text);
+    line-height: 1.6;
+    margin: 0 0 12px;
+}
+.wpsv-body {
+    font-size: var(--fs-body);
+    color: var(--token-text-muted);
+    line-height: 1.7;
+    margin: 0;
+}
+.wpsv-actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.wpsv-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 26px;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: var(--fs-btn);
+    text-decoration: none;
+    line-height: 1;
+    transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+}
+.wpsv-btn--primary { background: var(--token-primary); color: #111; }
+.wpsv-btn--primary:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(245, 166, 50, .32); }
+.wpsv-btn--ghost { background: transparent; border-color: var(--token-primary); color: var(--token-primary); }
+.wpsv-btn--ghost:hover { background: rgba(245, 166, 50, .12); }
+.wpsv-price {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    color: var(--token-primary);
+    line-height: 1.1;
+}
+.wpsv-note {
+    font-size: var(--fs-meta);
+    color: var(--token-text-muted);
+    margin: 16px 0 0;
+}
+
+/* Option 1 - split panel */
+.wpsv-v1 .wpsv-grid {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 48px;
+    align-items: start;
+}
+.wpsv-v1 .wpsv-panel {
+    background: #fff;
+    border: 1px solid var(--token-border);
+    border-radius: 16px;
+    padding: 8px 26px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .04);
+}
+.wpsv-v1 .wpsv-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--token-border);
+}
+.wpsv-v1 .wpsv-row:last-of-type { border-bottom: 0; }
+.wpsv-v1 .wpsv-row h3 {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-section);
+    color: var(--token-text);
+    margin: 0 0 4px;
+}
+.wpsv-v1 .wpsv-row p { font-size: var(--fs-meta); color: var(--token-text-muted); margin: 0; }
+.wpsv-v1 .wpsv-row .wpsv-price { font-size: clamp(18px, 1.6vw, 22px); white-space: nowrap; }
+.wpsv-v1 .wpsv-panel .wpsv-actions { padding: 18px 0 20px; }
+
+/* Option 2 - centered editorial */
+.wpsv-v2 { background: #fff; text-align: center; }
+.wpsv-v2 .wpsv-head { max-width: 720px; margin: 0 auto 36px; }
+.wpsv-v2 .wpsv-tiers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin: 0 0 32px;
+    text-align: left;
+}
+.wpsv-v2 .wpsv-tier {
+    background: var(--token-bg-soft);
+    border: 1px solid var(--token-border);
+    border-radius: 16px;
+    padding: 28px 24px;
+}
+.wpsv-v2 .wpsv-tier h3 {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-section);
+    color: var(--token-text);
+    margin: 0 0 6px;
+}
+.wpsv-v2 .wpsv-price { font-size: clamp(22px, 2vw, 28px); margin: 6px 0 12px; }
+.wpsv-v2 .wpsv-tier p { font-size: var(--fs-meta); color: var(--token-text-muted); line-height: 1.6; margin: 0; }
+.wpsv-v2 .wpsv-actions { justify-content: center; }
+.wpsv-v2 .wpsv-note { text-align: center; }
+
+/* Option 3 - dark premium */
+.wpsv-v3 {
+    background: linear-gradient(135deg, #0a0f1f 0%, #111a33 55%, #0d1426 100%);
+    border-color: rgba(255, 255, 255, .12);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.wpsv-v3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 85% 0%, rgba(245, 166, 50, .16), transparent 45%);
+    pointer-events: none;
+}
+.wpsv-v3 .wpsv-inner { position: relative; }
+.wpsv-v3 .wpsv-title { color: #fff; }
+.wpsv-v3 .wpsv-lead { color: rgba(255, 255, 255, .86); }
+.wpsv-v3 .wpsv-body { color: rgba(255, 255, 255, .62); }
+.wpsv-v3 .wpsv-head-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+.wpsv-v3 .wpsv-head-copy { max-width: 720px; }
+.wpsv-v3 .wpsv-tiers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 0 28px;
+}
+.wpsv-v3 .wpsv-tier {
+    background: rgba(255, 255, 255, .055);
+    border: 1px solid rgba(255, 255, 255, .14);
+    border-radius: 16px;
+    padding: 26px 24px;
+}
+.wpsv-v3 .wpsv-tier h3 {
+    color: #fff;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-section);
+    margin: 0 0 6px;
+}
+.wpsv-v3 .wpsv-tier p { color: rgba(255, 255, 255, .62); font-size: var(--fs-meta); line-height: 1.6; margin: 0; }
+.wpsv-v3 .wpsv-price { font-size: clamp(22px, 2vw, 28px); margin: 4px 0 12px; }
+.wpsv-v3 .wpsv-note { color: rgba(255, 255, 255, .55); }
+.wpsv-v3 .wpsv-btn--ghost { border-color: rgba(245, 166, 50, .55); color: #f5a632; }
+.wpsv-v3 .wpsv-btn--ghost:hover { background: rgba(245, 166, 50, .14); }
+
+@media (max-width: 900px) {
+    .wpsv-v1 .wpsv-grid { grid-template-columns: 1fr; gap: 28px; }
+    .wpsv-v2 .wpsv-tiers { grid-template-columns: 1fr; }
+    .wpsv-v3 .wpsv-tiers { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+    .wpsv-btn { width: 100%; justify-content: center; }
+}
+
+/* ===== Bottom CTA band ===== */
+.wps-cta {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    box-sizing: border-box;
+    padding: 60px 3%;
+    background: #fff;
+    border: 1px solid var(--token-border);
+    border-radius: 16px;
+}
+.wps-cta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+.wps-cta-copy { max-width: 720px; }
+
+/* ===== Partners page ===== */
+.pp-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 3%;
+    background: #fff;
+    border-bottom: 1px solid var(--token-border);
+    font-size: var(--fs-meta);
+}
+.pp-topbar a {
+    color: var(--token-text);
+    text-decoration: none;
+    font-weight: var(--fw-section);
+}
+.pp-topbar a:hover { color: var(--token-primary); }
+.pp-topbar span {
+    color: var(--token-text-muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.pp-hero {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    box-sizing: border-box;
+    padding: 90px 3% 80px;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #fff;
+    overflow: hidden;
+}
+.pp-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 75% 10%, rgba(245, 166, 50, .14), transparent 55%);
+    pointer-events: none;
+}
+.pp-hero-inner { position: relative; z-index: 2; width: 100%; }
+.pp-hero h1 {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: clamp(38px, 6vw, 72px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 18px 0 14px;
+    color: #fff;
+    max-width: 900px;
+}
+.pp-hero-sub {
+    font-size: var(--fs-lead);
+    color: rgba(255, 255, 255, .85);
+    line-height: 1.5;
+    margin: 0 0 16px;
+    max-width: 760px;
+}
+.pp-hero-body {
+    font-size: var(--fs-body);
+    color: rgba(255, 255, 255, .62);
+    line-height: 1.7;
+    margin: 0 0 32px;
+    max-width: 760px;
+}
+.pp-hero .wpsv-btn--ghost { border-color: rgba(255, 255, 255, .5); color: #fff; }
+.pp-hero .wpsv-btn--ghost:hover { background: rgba(255, 255, 255, .1); }
+.pp-band {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    box-sizing: border-box;
+    padding: 60px 3%;
+    background: var(--token-bg-soft);
+    border: 1px solid var(--token-border);
+    border-radius: 16px;
+}
+.pp-band--white { background: #fff; }
+.pp-head { max-width: 820px; margin-bottom: 40px; }
+.pp-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+.pp-step {
+    background: #fff;
+    border: 1px solid var(--token-border);
+    border-radius: 16px;
+    padding: 28px 24px;
+}
+.pp-ico {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(245, 166, 50, .12);
+    color: var(--token-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+.pp-step h3 {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-section);
+    color: var(--token-text);
+    margin: 0 0 8px;
+}
+.pp-step p {
+    font-size: var(--fs-meta);
+    color: var(--token-text-muted);
+    line-height: 1.6;
+    margin: 0;
+}
+.pp-tiers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.pp-tier {
+    background: var(--token-bg-soft);
+    border: 1px solid var(--token-border);
+    border-radius: 16px;
+    padding: 30px 26px;
+    display: flex;
+    flex-direction: column;
+}
+.pp-band--white .pp-tier { background: #fff; }
+.pp-tier h3 {
+    font-size: var(--fs-section);
+    font-weight: var(--fw-section);
+    color: var(--token-text);
+    margin: 0 0 4px;
+}
+.pp-price {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: clamp(24px, 2.4vw, 32px);
+    font-weight: 800;
+    color: var(--token-primary);
+    line-height: 1.1;
+}
+.pp-per {
+    font-size: var(--fs-meta);
+    color: var(--token-text-muted);
+    margin: 4px 0 18px;
+}
+.pp-tier ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.pp-tier li {
+    position: relative;
+    padding-left: 24px;
+    font-size: var(--fs-body);
+    color: var(--token-text-muted);
+    line-height: 1.6;
+}
+.pp-tier li i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: var(--token-primary);
+    font-size: 12px;
+}
+.pp-tier li.pp-first { color: var(--token-text); font-weight: var(--fw-section); }
+.pp-contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 0 0 28px;
+}
+.pp-contact-item {
+    border: 1px solid var(--token-border);
+    border-radius: 16px;
+    padding: 22px;
+    background: #fff;
+}
+.pp-contact-item span {
+    display: block;
+    font-size: var(--fs-meta);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--token-text-muted);
+    margin-bottom: 6px;
+}
+.pp-contact-item a,
+.pp-contact-item strong {
+    font-size: var(--fs-body);
+    color: var(--token-text);
+    text-decoration: none;
+    font-weight: var(--fw-section);
+    line-height: 1.5;
+}
+.pp-contact-item a:hover { color: var(--token-primary); }
+
+@media (max-width: 900px) {
+    .wps-cta-row { flex-direction: column; align-items: flex-start; }
+    .pp-grid { grid-template-columns: 1fr 1fr; }
+    .pp-tiers { grid-template-columns: 1fr; }
+    .pp-contact-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px) {
+    .pp-grid { grid-template-columns: 1fr; }
+    .pp-contact-grid { grid-template-columns: 1fr; }
+    .pp-hero .wpsv-btn,
+    .pp-band .wpsv-btn { width: 100%; justify-content: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     WEBINARS PAGE (copy of #page-webinars from index.html)
+     ============================================================ -->
+    <div id="page-webinars" class="page-content" style="display:block;">
+        <!-- Hero -->
+        <div class="ur-hero" style="position:relative;width:100vw;margin-left:calc(-50vw + 50%);min-height:88vh;background:linear-gradient(135deg,#0a0a0a 0%,#1a1a2e 50%,#16213e 100%);display:flex;align-items:center;overflow:hidden;border-radius:0;">
+            <div style="position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&h=1080&fit=crop') center/cover;opacity:0.22;mix-blend-mode:overlay;"></div>
+            <div style="position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 0%,rgba(0,0,0,0.8) 100%);"></div>
+            <div style="position:relative;z-index:2;padding:24vh 5% 10vh;max-width:720px;">
+                <span style="display:inline-block;padding:8px 20px;border:1px solid rgba(245,166,50,0.4);border-radius:100px;font-size:var(--fs-meta);font-weight: var(--fw-meta); text-transform: none;letter-spacing:3px;color:var(--token-primary);margin-bottom:24px;">
+                    CSI Indaba Webinar Series</span>
+                <h1 style="font-family:'Raleway', Helvetica, Arial, sans-serif;font-size:clamp(48px, 8vw, 100px);color:#fff;line-height:0.98;letter-spacing:-0.02em;margin-bottom:20px;">
+                    Webinars</h1>
+                <p style="font-size:var(--fs-body);color:rgba(255,255,255,0.7);line-height:1.6;max-width:600px;margin:0 0 36px;">
+                    Expert insights, strategic discussions, and practical perspectives on corporate social investment and socio-economic transformation.</p>
+            </div>
+        </div>
+        <!-- Featured Webinar Section (2-column layout matching reports page) -->
+        <div style="width:100vw;margin-left:calc(-50vw + 50%);background:#fff;padding:60px 3%;border:1px solid var(--token-border);border-radius:16px;">
+            <div style="width:100%;">
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+                    <div>
+                        <span style="font-size:var(--fs-meta);font-weight: var(--fw-meta); text-transform: none;letter-spacing:3px;color:var(--token-primary);">
+                            25 November 2026 | 10:30 - 12:00 SAST | Webinar 04</span>
+                        <h2 style="font-family:'Raleway', Helvetica, Arial, sans-serif;font-weight: var(--fw-primary);font-size:var(--fs-primary);color:var(--token-text);line-height:1.2;margin:12px 0 20px;">
+                            What We Learn from Wounded Homes</h2>
+                        <p style="font-size:var(--fs-body);color:var(--token-text-muted);line-height:1.7;">
+                            The Importance of Rethinking ECD as a Tool to Fight GBVF. This webinar is part of the CSI Against GBVF initiative and marks The Launch of the 16 Days of Activism.</p>
+                        </p>
+                        <div style="display:flex;gap:24px;margin-top:28px;">
+                            <div>
+                                <strong style="font-size:var(--fs-primary);color:var(--token-text);">
+                                    Nomfundo</strong>
+                                <p style="font-size:var(--fs-meta);color:var(--token-text-muted);margin:2px 0 0;">
+                                    Mogapi</p>
+                            </div>
+                            <div>
+                                <strong style="font-size:var(--fs-primary);color:var(--token-text);">
+                                    Simphiwe</strong>
+                                <p style="font-size:var(--fs-meta);color:var(--token-text-muted);margin:2px 0 0;">
+                                    Mtetwa</p>
+                            </div>
+                            <div>
+                                <strong style="font-size:var(--fs-primary);color:var(--token-text);">
+                                    Status</strong>
+                                <p style="font-size:var(--fs-meta);color:var(--token-text-muted);margin:2px 0 0;">
+                                    Upcoming</p>
+                            </div>
+                        </div>
+                        <div style="margin-top:24px;">
+                            <a href="#webinar-04-detail" style="background:var(--token-primary);color:#111;border:none;padding:12px 28px;border-radius:30px;font-weight:bold;cursor:pointer;font-size:var(--fs-btn);text-decoration:none;display:inline-flex;align-items:center;gap:8px;">
+                                <i class="fas fa-play"></i> View full details
+                            </a>
+                        </div>
+                    </div>
+                    <div style="position:relative;">
+                        <div style="width:100%;min-height:450px;height:clamp(450px,52vw,600px);position:relative;background:#031726;border-radius:16px;align-items:center;justify-content:center;overflow:hidden;">
+                            <img src="https://simphiwemtetwa.africa/wp-content/uploads/2026/10/ChatGPT-Image-Jun-20-2026-04_40_10-AM.png" alt="Webinar Presenters" style="width:100%;height:100%;object-fit:contain;border-radius:12px;">
+                            <div style="position:absolute;top:20px;left:20px;background:var(--token-primary);color:#111;padding:6px 14px;border-radius:100px;font-size:var(--fs-meta);font-weight:var(--fw-meta);">
+                                Upcoming
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- All Webinars Grid -->
+        <div style="background:var(--token-bg-soft);width:100vw;margin-left:calc(-50vw + 50%);padding:60px 3%;border:1px solid var(--token-border);border-radius:16px;">
+            <div style="width:100%;">
+                <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;flex-wrap:wrap;gap:16px;">
+                    <div>
+                        <span style="font-size:var(--fs-meta);font-weight: var(--fw-meta); text-transform: none;letter-spacing:3px;color:var(--token-primary);">
+                            All webinars</span>
+                        <h2 style="font-family:'Raleway', Helvetica, Arial, sans-serif;font-weight: var(--fw-primary);font-size:var(--fs-primary);color:var(--token-text);margin:8px 0 0;">
+                            Browse by Category</h2>
+                    </div>
+                </div>
+
+                <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:32px;">
+                    <!-- Webinar 04 - Upcoming -->
+                    <a href="#webinar-04-detail" onclick="showWebinarDetail('webinar-04-detail');return false;" style="text-decoration:none;color:inherit;display:block;">
+                        <div style="background:#fff;border-radius:16px;border:1px solid var(--token-border);overflow:hidden;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;height:100%;">
+                            <div style="position:relative;min-height:320px;flex-shrink:0;">
+                                <img src="https://simphiwemtetwa.africa/wp-content/uploads/2026/10/ChatGPT-Image-Jun-20-2026-04_40_10-AM.png" alt="What We Learn from Wounded Homes" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+                                <span style="position:absolute;top:20px;left:20px;background:var(--token-primary);color:#111;padding:6px 14px;border-radius:100px;font-size:var(--fs-meta);font-weight:var(--fw-meta);">Upcoming</span>
+                            </div>
+                            <div style="padding:32px;display:flex;flex-direction:column;flex-grow:1;">
+                                <div style="font-size:var(--fs-meta);color:var(--token-text-muted);text-transform:none;letter-spacing:1px;font-weight:var(--fw-section);margin-bottom:8px;">
+                                    25 November 2026 | 10:30 - 12:00 SAST
+                                </div>
+                                <h3 style="font-family:'Raleway', Helvetica, Arial, sans-serif;font-weight:var(--fw-section);font-size:var(--fs-section);color:var(--token-text);margin:8px 0 12px;">
+                                    What We Learn from Wounded Homes
+                                </h3>
+                                <p style="font-size:var(--fs-btn);color:var(--token-text-muted);line-height:1.6;flex-grow:1;">
+                                    The Importance of Rethinking ECD as a Tool to Fight GBVF.
+                                </p>
+                                <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--token-border);">
+                                    <span style="font-size:var(--fs-meta);font-weight:var(--fw-section);color:var(--token-primary);">View full details →</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Webinar 03 - Past -->
+                    <a href="#webinar-03-detail" onclick="showWebinarDetail('webinar-03-detail');return false;" style="text-decoration:none;color:inherit;display:block;">
+                        <div style="background:#fff;border-radius:16px;border:1px solid var(--token-border);overflow:hidden;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;height:100%;">
+                            <div style="position:relative;min-height:320px;flex-shrink:0;">
+                                <img src="https://simphiwemtetwa.africa/wp-content/uploads/2026/11/Confident-Corporate-Portrait-in-Navy-Suit.webp" alt="How should CSI respond to GBVF?" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+                            </div>
+                            <div style="padding:32px;display:flex;flex-direction:column;flex-grow:1;">
+                                <div style="font-size:var(--fs-meta);color:var(--token-text-muted);text-transform:none;letter-spacing:1px;font-weight:var(--fw-section);margin-bottom:8px;">
+                                    28 October 2026 | 10:30 - 12:00 SAST
+                                </div>
+                                <h3 style="font-family:'Raleway', Helvetica, Arial, sans-serif;font-weight:var(--fw-section);font-size:var(--fs-section);color:var(--token-text);margin:8px 0 12px;">
+                                    How should CSI respond to GBVF?
+                                </h3>
+                                <p style="font-size:var(--fs-btn);color:var(--token-text-muted);line-height:1.6;flex-grow:1;">
+                                    Where are we now? Antonia Oakes and Simphiwe Mtetwa discuss corporate social investment and GBVF.
+                                </p>
+                                <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--token-border);">
+                                    <span style="font-size:var(--fs-meta);font-weight:var(--fw-section);color:var(--token-primary);">View full details →</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Webinar 02 - Past -->
+                    <a href="#webinar-02-detail" onclick="showWebinarDetail('webinar-02-detail');return false;" style="text-decoration:none;color:inherit;display:block;">
+                        <div style="background:#fff;border-radius:16px;border:1px solid var(--token-border);overflow:hidden;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;height:100%;">
+                            <div style="position:relative;min-height:320px;flex-shrink:0;">
+                                <img src="https://simphiwemtetwa.africa/wp-content/uploads/2026/10/MAIN-WEBINAAR.png" alt="The inequality mandate in focus" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+                            </div>
+                            <div style="padding:32px;display:flex;flex-direction:column;flex-grow:1;">
+                                <div style="font-size:var(--fs-meta);color:var(--token-text-muted);text-transform:none;letter-spacing:1px;font-weight:var(--fw-section);margin-bottom:8px;">
+                                    09 June 2026 | 11:00 - 12:30 SAST
+                                </div>
+                                <h3 style="font-family:'Raleway', Helvetica, Arial, sans-serif;font-weight:var(--fw-section);font-size:var(--fs-section);color:var(--token-text);margin:8px 0 12px;">
+                                    The inequality mandate in focus
+                                </h3>
+                                <p style="font-size:var(--fs-btn);color:var(--token-text-muted);line-height:1.6;flex-grow:1;">
+                                    Understanding South Africa's path to the World's highest inequality.
+                                </p>
+                                <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--token-border);">
+                                    <span style="font-size:var(--fs-meta);font-weight:var(--fw-section);color:var(--token-primary);">View full details →</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Webinar 01 - Past -->
+                    <a href="#webinar-01-detail" onclick="showWebinarDetail('webinar-01-detail');return false;" style="text-decoration:none;color:inherit;display:block;">
+                        <div style="background:#fff;border-radius:16px;border:1px solid var(--token-border);overflow:hidden;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;height:100%;">
+                            <div style="position:relative;min-height:320px;flex-shrink:0;">
+                                <img src="https://simphiwemtetwa.africa/wp-content/uploads/2026/10/ChatGPT-Image-Jun-20-2026-04_40_10-AM.png" alt="The invisible drivers of inequality" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+                            </div>
+                            <div style="padding:32px;display:flex;flex-direction:column;flex-grow:1;">
+                                <div style="font-size:var(--fs-meta);color:var(--token-text-muted);text-transform:none;letter-spacing:1px;font-weight:var(--fw-section);margin-bottom:8px;">
+                                    22 May 2026 | 11:00 - 12:30 SAST
+                                </div>
+                                <h3 style="font-family:'Raleway', Helvetica, Arial, sans-serif;font-weight:var(--fw-section);font-size:var(--fs-section);color:var(--token-text);margin:8px 0 12px;">
+                                    The invisible drivers of inequality
+                                </h3>
+                                <p style="font-size:var(--fs-btn);color:var(--token-text-muted);line-height:1.6;flex-grow:1;">
+                                    The invisible architecture of inequality: Trauma, power, and the limits of corporate social investment.
+                                </p>
+                                <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--token-border);">
+                                    <span style="font-size:var(--fs-meta);font-weight:var(--fw-section);color:var(--token-primary);">View full details →</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================================
+             PARTNER WITH US
+             ============================================================ -->
+        <section id="webinar-partnerships" aria-labelledby="wps-title">
+            <div class="wps-inner">
+                <div class="wps-head">
+                    <span class="wps-kicker">Partnerships</span>
+                    <h2 class="wps-title" id="wps-title">Partner with Us</h2>
+                    <p class="wps-lead">Sponsor or shape a conversation on corporate social investment in South Africa.</p>
+                    <p class="wps-body">We bring together corporate teams, civil society practitioners, and subject specialists to discuss inequality and social development. Partner with us to amplify your brand's commitment to these critical issues.</p>
+                </div>
+                <div class="wps-tiers">
+                    <article class="wps-tier">
+                        <h3>Webinar Sponsor</h3>
+                        <div class="wps-price">ZAR 39,980</div>
+                        <p>Logo placement &amp; acknowledgement.</p>
+                    </article>
+                    <article class="wps-tier">
+                        <h3>Content Partner</h3>
+                        <div class="wps-price">ZAR 69,980</div>
+                        <p>Shape the topic, join briefings, &amp; branding.</p>
+                    </article>
+                    <article class="wps-tier">
+                        <h3>Series Partner</h3>
+                        <div class="wps-price">ZAR 199,980</div>
+                        <p>Brand a full series of 3 conversations.</p>
+                    </article>
+                </div>
+                <div class="wps-actions">
+                    <a class="wps-btn wps-btn--primary" href="assets/Simphiwe_Mtetwa_Webinar_Prospectus.pdf" download="Simphiwe_Mtetwa_Webinar_Prospectus.pdf">
+                        <i class="fas fa-download" aria-hidden="true"></i> Download Full Prospectus (PDF)
+                    </a>
+                    <a class="wps-btn wps-btn--ghost" href="mailto:emma@simphiwemtetwa.africa?subject=Webinar%20Partnership%20Enquiry">
+                        <i class="fas fa-envelope" aria-hidden="true"></i> Contact Emma to Partner
+                    </a>
+                </div>
+                <p class="wps-note">PDF · 4 pages · emma@simphiwemtetwa.africa · WhatsApp 069 878 9813</p>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             PARTNER WITH US - 3 COMPARISON VARIANTS (preview only)
+             ============================================================ -->
+        <div class="wps-variants">
+
+            <div class="wpsv-label">Option 1 &mdash; Split panel</div>
+            <section class="wpsv-section wpsv-v1">
+                <div class="wpsv-inner">
+                    <div class="wpsv-grid">
+                        <div class="wpsv-copy">
+                            <span class="wpsv-kicker">Partnerships</span>
+                            <h2 class="wpsv-title">Partner with Us</h2>
+                            <p class="wpsv-lead">Sponsor or shape a conversation on corporate social investment in South Africa.</p>
+                            <p class="wpsv-body">We bring together corporate teams, civil society practitioners, and subject specialists to discuss inequality and social development. Partner with us to amplify your brand's commitment to these critical issues.</p>
+                        </div>
+                        <div class="wpsv-panel">
+                            <div class="wpsv-row">
+                                <div><h3>Webinar Sponsor</h3><p>Logo placement &amp; acknowledgement.</p></div>
+                                <div class="wpsv-price">ZAR 39,980</div>
+                            </div>
+                            <div class="wpsv-row">
+                                <div><h3>Content Partner</h3><p>Shape the topic, join briefings, &amp; branding.</p></div>
+                                <div class="wpsv-price">ZAR 69,980</div>
+                            </div>
+                            <div class="wpsv-row">
+                                <div><h3>Series Partner</h3><p>Brand a full series of 3 conversations.</p></div>
+                                <div class="wpsv-price">ZAR 199,980</div>
+                            </div>
+                            <div class="wpsv-actions">
+                                <a class="wpsv-btn wpsv-btn--primary" href="assets/Simphiwe_Mtetwa_Webinar_Prospectus.pdf" download="Simphiwe_Mtetwa_Webinar_Prospectus.pdf"><i class="fas fa-download" aria-hidden="true"></i> Download Full Prospectus (PDF)</a>
+                                <a class="wpsv-btn wpsv-btn--ghost" href="mailto:emma@simphiwemtetwa.africa?subject=Webinar%20Partnership%20Enquiry"><i class="fas fa-envelope" aria-hidden="true"></i> Contact Emma to Partner</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="wpsv-note">PDF · 4 pages · emma@simphiwemtetwa.africa · WhatsApp 069 878 9813</p>
+                </div>
+            </section>
+
+            <div class="wpsv-label">Option 2 &mdash; Centered editorial</div>
+            <section class="wpsv-section wpsv-v2">
+                <div class="wpsv-inner">
+                    <div class="wpsv-head">
+                        <span class="wpsv-kicker">Partnerships</span>
+                        <h2 class="wpsv-title">Partner with Us</h2>
+                        <p class="wpsv-lead">Sponsor or shape a conversation on corporate social investment in South Africa.</p>
+                        <p class="wpsv-body">We bring together corporate teams, civil society practitioners, and subject specialists to discuss inequality and social development. Partner with us to amplify your brand's commitment to these critical issues.</p>
+                    </div>
+                    <div class="wpsv-tiers">
+                        <article class="wpsv-tier">
+                            <h3>Webinar Sponsor</h3>
+                            <div class="wpsv-price">ZAR 39,980</div>
+                            <p>Logo placement &amp; acknowledgement.</p>
+                        </article>
+                        <article class="wpsv-tier">
+                            <h3>Content Partner</h3>
+                            <div class="wpsv-price">ZAR 69,980</div>
+                            <p>Shape the topic, join briefings, &amp; branding.</p>
+                        </article>
+                        <article class="wpsv-tier">
+                            <h3>Series Partner</h3>
+                            <div class="wpsv-price">ZAR 199,980</div>
+                            <p>Brand a full series of 3 conversations.</p>
+                        </article>
+                    </div>
+                    <div class="wpsv-actions">
+                        <a class="wpsv-btn wpsv-btn--primary" href="assets/Simphiwe_Mtetwa_Webinar_Prospectus.pdf" download="Simphiwe_Mtetwa_Webinar_Prospectus.pdf"><i class="fas fa-download" aria-hidden="true"></i> Download Full Prospectus (PDF)</a>
+                        <a class="wpsv-btn wpsv-btn--ghost" href="mailto:emma@simphiwemtetwa.africa?subject=Webinar%20Partnership%20Enquiry"><i class="fas fa-envelope" aria-hidden="true"></i> Contact Emma to Partner</a>
+                    </div>
+                    <p class="wpsv-note">PDF · 4 pages · emma@simphiwemtetwa.africa · WhatsApp 069 878 9813</p>
+                </div>
+            </section>
+
+            <div class="wpsv-label">Option 3 &mdash; Dark premium</div>
+            <section class="wpsv-section wpsv-v3">
+                <div class="wpsv-inner">
+                    <div class="wpsv-head-row">
+                        <div class="wpsv-head-copy">
+                            <span class="wpsv-kicker">Partnerships</span>
+                            <h2 class="wpsv-title">Partner with Us</h2>
+                            <p class="wpsv-lead">Sponsor or shape a conversation on corporate social investment in South Africa.</p>
+                            <p class="wpsv-body">We bring together corporate teams, civil society practitioners, and subject specialists to discuss inequality and social development. Partner with us to amplify your brand's commitment to these critical issues.</p>
+                        </div>
+                        <div class="wpsv-actions">
+                            <a class="wpsv-btn wpsv-btn--primary" href="assets/Simphiwe_Mtetwa_Webinar_Prospectus.pdf" download="Simphiwe_Mtetwa_Webinar_Prospectus.pdf"><i class="fas fa-download" aria-hidden="true"></i> Download Full Prospectus (PDF)</a>
+                            <a class="wpsv-btn wpsv-btn--ghost" href="mailto:emma@simphiwemtetwa.africa?subject=Webinar%20Partnership%20Enquiry"><i class="fas fa-envelope" aria-hidden="true"></i> Contact Emma to Partner</a>
+                        </div>
+                    </div>
+                    <div class="wpsv-tiers">
+                        <article class="wpsv-tier">
+                            <h3>Webinar Sponsor</h3>
+                            <div class="wpsv-price">ZAR 39,980</div>
+                            <p>Logo placement &amp; acknowledgement.</p>
+                        </article>
+                        <article class="wpsv-tier">
+                            <h3>Content Partner</h3>
+                            <div class="wpsv-price">ZAR 69,980</div>
+                            <p>Shape the topic, join briefings, &amp; branding.</p>
+                        </article>
+                        <article class="wpsv-tier">
+                            <h3>Series Partner</h3>
+                            <div class="wpsv-price">ZAR 199,980</div>
+                            <p>Brand a full series of 3 conversations.</p>
+                        </article>
+                    </div>
+                    <p class="wpsv-note">PDF · 4 pages · emma@simphiwemtetwa.africa · WhatsApp 069 878 9813</p>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ============================================================
+             BOTTOM CTA - GO TO PARTNERS PAGE
+             ============================================================ -->
+        <section class="wps-cta">
+            <div class="wps-cta-row">
+                <div class="wps-cta-copy">
+                    <span class="wpsv-kicker">Partnerships</span>
+                    <h2 class="wpsv-title" style="margin-bottom:10px;">Explore the full partnership pack</h2>
+                    <p class="wpsv-lead" style="margin:0;">Everything sponsors need in one place: the process, the tiers, and how to start the conversation.</p>
+                </div>
+                <div class="wpsv-actions">
+                    <a class="wpsv-btn wpsv-btn--primary" href="#partners" onclick="openPartnersPage();return false;">Go to the Partners Page <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    <a class="wpsv-btn wpsv-btn--ghost" href="assets/Simphiwe_Mtetwa_Webinar_Prospectus.pdf" download="Simphiwe_Mtetwa_Webinar_Prospectus.pdf">Download Full Prospectus (PDF)</a>
+                </div>
+            </div>
+        </section>
+    </div>
+<!-- ============================================================
+     END WEBINARS PAGE
+     ============================================================ -->
+
+<!-- ============================================================
+     PARTNERS PAGE (same file, shown via openPartnersPage)
+     ============================================================ -->
+<section id="partners-page" style="display:none;">
+
+    <div class="pp-topbar">
+        <a href="#webinars" onclick="closePartnersPage();return false;">← Back to Webinars</a>
+        <span>Simphiwe Mtetwa / Webinar Partnerships</span>
+    </div>
+
+    <!-- Hero -->
+    <div class="pp-hero">
+        <div class="pp-hero-inner">
+            <span class="wpsv-kicker" style="border:1px solid rgba(245,166,50,.4);border-radius:100px;padding:8px 20px;letter-spacing:3px;">Webinar Partnerships</span>
+            <h1>Partner with Us</h1>
+            <p class="pp-hero-sub">Shape the conversation on corporate social investment in South Africa.</p>
+            <p class="pp-hero-body">We bring together corporate teams, civil society practitioners, and subject specialists to discuss inequality, social development, and actionable solutions. Partner with us to amplify your brand's commitment to these critical issues.</p>
+            <div class="wpsv-actions">
+                <a class="wpsv-btn wpsv-btn--primary" href="assets/Simphiwe_Mtetwa_Webinar_Prospectus.pdf" download="Simphiwe_Mtetwa_Webinar_Prospectus.pdf"><i class="fas fa-download" aria-hidden="true"></i> Download Full Prospectus (PDF)</a>
+                <a class="wpsv-btn wpsv-btn--ghost" href="mailto:emma@simphiwemtetwa.africa?subject=Webinar%20Partnership%20Enquiry"><i class="fas fa-envelope" aria-hidden="true"></i> Email Emma</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- How it works -->
+    <div class="pp-band">
+        <div class="pp-head">
+            <span class="wpsv-kicker">How it works</span>
+            <h2 class="wpsv-title">What goes into each webinar</h2>
+            <p class="wpsv-body">Every partnership is backed by a professional preparation process that gives your brand visibility and substance.</p>
+        </div>
+        <div class="pp-grid">
+            <div class="pp-step">
+                <div class="pp-ico"><i class="fas fa-file-lines" aria-hidden="true"></i></div>
+                <h3>Concept Note</h3>
+                <p>Defining the issue, target audience, and goals.</p>
+            </div>
+            <div class="pp-step">
+                <div class="pp-ico"><i class="fas fa-microphone-lines" aria-hidden="true"></i></div>
+                <h3>Speaker Briefing</h3>
+                <p>Aligning key questions and contributions.</p>
+            </div>
+            <div class="pp-step">
+                <div class="pp-ico"><i class="fas fa-users" aria-hidden="true"></i></div>
+                <h3>Two Preparation Meetings</h3>
+                <p>A vision meeting and a speaker briefing to confirm roles and running order.</p>
+            </div>
+            <div class="pp-step">
+                <div class="pp-ico"><i class="fas fa-bullhorn" aria-hidden="true"></i></div>
+                <h3>Four-Week Social Media Campaign</h3>
+                <p>Building interest, introducing speakers, and driving registrations.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Partnership options -->
+    <div class="pp-band pp-band--white">
+        <div class="pp-head">
+            <span class="wpsv-kicker">Partnership options</span>
+            <h2 class="wpsv-title">Ways to partner</h2>
+            <p class="wpsv-body">Choose the level of visibility and involvement that fits your organisation.</p>
+        </div>
+        <div class="pp-tiers">
+            <article class="pp-tier">
+                <h3>Webinar Sponsor</h3>
+                <div class="pp-price">ZAR 39,980</div>
+                <div class="pp-per">per webinar</div>
+                <ul>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Logo placement on all promotional materials during the 4-week campaign.</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Verbal acknowledgement during the live webinar.</li>
+                </ul>
+            </article>
+            <article class="pp-tier">
+                <h3>Content Partner</h3>
+                <div class="pp-price">ZAR 69,980</div>
+                <div class="pp-per">per webinar</div>
+                <ul>
+                    <li class="pp-first">All Sponsor benefits, plus:</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Brand the conversation across campaign and live materials.</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Join vision and briefing meetings.</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Help shape the topic and contribute a speaker, research, or case study.</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Receive an outcome closeout report with takeaways and audience/campaign figures.</li>
+                </ul>
+            </article>
+            <article class="pp-tier">
+                <h3>Series Partner</h3>
+                <div class="pp-price">ZAR 199,980</div>
+                <div class="pp-per">per series of 3</div>
+                <ul>
+                    <li class="pp-first">All Content Partner benefits for three conversations around one theme.</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Two preparation meetings and 4 weeks of promotion per session.</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>One comprehensive outcome closeout report covering the full series.</li>
+                </ul>
+            </article>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="pp-band">
+        <div class="pp-head">
+            <span class="wpsv-kicker">Get in touch</span>
+            <h2 class="wpsv-title">Contact Emma</h2>
+            <p class="wpsv-body">Tell us the issue your organisation would like to address, who you want to reach, and your preferred timing.</p>
+        </div>
+        <div class="pp-contact-grid">
+            <div class="pp-contact-item">
+                <span>Email</span>
+                <a href="mailto:emma@simphiwemtetwa.africa">emma@simphiwemtetwa.africa</a>
+            </div>
+            <div class="pp-contact-item">
+                <span>WhatsApp only</span>
+                <a href="https://wa.me/27698789813" target="_blank" rel="noopener">069 878 9813</a>
+            </div>
+            <div class="pp-contact-item">
+                <span>Web</span>
+                <a href="https://www.simphiwemtetwa.africa" target="_blank" rel="noopener">www.simphiwemtetwa.africa</a>
+            </div>
+            <div class="pp-contact-item">
+                <span>Address</span>
+                <strong>12 Kangnussie Drive, Randburg, Blairgowrie, Johannesburg, South Africa, 2191</strong>
+            </div>
+        </div>
+        <div class="wpsv-actions">
+            <a class="wpsv-btn wpsv-btn--primary" href="mailto:emma@simphiwemtetwa.africa?subject=Webinar%20Partnership%20Enquiry"><i class="fas fa-envelope" aria-hidden="true"></i> Email Emma</a>
+            <a class="wpsv-btn wpsv-btn--ghost" href="assets/Simphiwe_Mtetwa_Webinar_Prospectus.pdf" download="Simphiwe_Mtetwa_Webinar_Prospectus.pdf"><i class="fas fa-download" aria-hidden="true"></i> Download Full Prospectus (PDF)</a>
+        </div>
+        <p class="wpsv-note">Simphiwe Mtetwa / Webinar Partnerships</p>
+    </div>
+
+</section>
+
+<script>
+// Placeholder stubs so card clicks do not throw in this visual-only copy.
+function showWebinarDetail() { return false; }
+function showWebinarsPage() { return false; }
+function showWebinarRegisterPage() { return false; }
+
+function openPartnersPage() {
+    document.getElementById('page-webinars').style.display = 'none';
+    document.getElementById('partners-page').style.display = 'block';
+    document.title = 'Partner with Us - Simphiwe Mtetwa';
+    try { history.replaceState(null, '', '#partners'); } catch (e) { location.hash = 'partners'; }
+    window.scrollTo(0, 0);
+}
+function closePartnersPage() {
+    document.getElementById('partners-page').style.display = 'none';
+    document.getElementById('page-webinars').style.display = 'block';
+    document.title = 'Webinars - Preview';
+    try { history.replaceState(null, '', '#webinars'); } catch (e) { location.hash = 'webinars'; }
+    window.scrollTo(0, 0);
+}
+if (location.hash === '#partners') { openPartnersPage(); }
+</script>
+</body>
+</html>
